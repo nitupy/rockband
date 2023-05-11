@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Contact Us</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+  <style>
+    body {
+      background-color: #FFFFFF;
+      font-family: Satisfy;
+      margin: 0;
+    }
+
+
+ input[type=text],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 3px solid #000000;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+      font-size: 14px; /* Decrease the font size */
+    }
+
+    input[type=submit] {
+      display: inline-block;
+      padding: 0.1rem;
+      border: 5rem solid var(--black);
+      color: black;
+      cursor: pointer;
+      font-size: 1 rem;
+      border-radius: 0.5rem;
+      position: relative;
+      overflow: hidden;
+      z-index: 0;
+      margin-top: 1rem;
+      text-decoration: none;
+      text-color: white;
+      background-color: #000000;
+      padding: 10px 24px;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    }
+
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+
+    .container {
+      border-radius: 50px;
+      background-color: white;
+      padding: 400px;
+      border-radius: 50px;
+      border-color: black;
+
+    }
+  </style>
+
+
+</head>
+
+<body>
+
+   <section class="nav-bar">
+    <div class="logo">Generation Axe</div>
+  <ul class="menu">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="Meettheband.html">Meet The Band!</a></li>
+  <li><a href="contactus.html">Contact Us!</a></li>
+    </ul>
+    </div>
+  </section>
+
+    <div class="container">
+      <h1>
+        <center>Provide Us Feedback! 📋</center>
+      </h1>
+      <form action="/action_page.php">
+        <label for="fname">
+          <h1 style="font-size: 20px">First Name</h1>
+        </label>
+        <input type="text" id="fname" name="firstname" placeholder="John...">
+
+        <label for="lname">
+          <h1 style="font-size: 20px">Last Name</h1>
+        </label>
+        <input type="text" id="lname" name="lastname" placeholder="Doe...">
+
+        <label for="continent">
+          <h1 style="font-size: 20px">Continent</h1>
+        </label>
+        <select id="continent" name="continent">
+          <option value="north-america">North America</option>
+          <option value="south-america">South America</option>
+          <option value="europe">Europe</option>
+          <option value="asia">Asia</option>
+          <option value="africa">Africa</option>
+          <option value="australia">Australia</option>
+        </select>
+
+        <label for="subject">
+          <h1 style="font-size: 20px">What Do You Want To Tell Us?</h1>
+        </label>
+        <textarea id="subject" name="subject" placeholder="I'm John Doe..." style="height:200px"></textarea>
+
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+
+
+
+  </div>
+  <script src="script.js"></script>
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
+</body>
+
+</html>
